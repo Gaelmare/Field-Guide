@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html style="width:100%; height:100%; padding:0px; margin:0px;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta charset="UTF-8">
+
+    <title>TerraFirmaCraft Field Guide</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6fa482c6e2.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md fixed-top bg-dark">
+    <div class="navbar-header">
+        <a class="navbar-brand text-light" href="../">TerraFirmaCraft Field Guide</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" id="lang-dropdown-button" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Українська мова</a>
+                <div class="dropdown-menu" aria-labelledby="lang-dropdown-button">
+                    <a href="../../en_us/mechanics/" class="dropdown-item">English</a>
+<a href="../../pt_br/mechanics/" class="dropdown-item">Portuguese (Brazil)</a>
+<a href="../../ko_kr/mechanics/" class="dropdown-item">한국어</a>
+<a href="../../uk_ua/mechanics/" class="dropdown-item">Українська мова</a>
+<a href="../../zh_cn/mechanics/" class="dropdown-item">简体中文(中国大陆)</a>
+<a href="../../zh_tw/mechanics/" class="dropdown-item">繁體中文(台灣)</a>
+                </div>
+            </li>
+            <li class="nav-item active"><a class="nav-link text-light" href="../">Index</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="https://terrafirmacraft.github.io/Documentation/"><i class="fa fa-cogs"></i> API Docs</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="https://github.com/TerraFirmaCraft/Field-Guide"><i class="fa fa-github"></i> GitHub</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="https://discord.gg/PRuAKvY"><i class="fab fa-discord"></i> Discord</a></li>
+            <li class="nav-item"><span class="nav-link text-light" href="#">Version v2.2.15</span></li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid" style="margin-top:50px">
+    <div class="row">
+        <div class="col-md-2 py-1">
+            <div class="sticky-top" style="top: 70px">
+                <h4>Contents</h4>
+                <ul class="list-unstyled">
+                    <li><a class="text-muted" href="../the_world/">Світ</a></li>
+<li><a class="text-muted" href="../getting_started/">Починаємо</a></li>
+<li><a class="text-muted" href="../mechanics/">Розширена механіка</a></li><ul class="list-unstyled push-right"><li><a class="text-muted" href="./advanced_building_materials.html">Передові матеріали</a></li>
+<li><a class="text-muted" href="./animal_husbandry.html">Тваринництво</a></li>
+<li><a class="text-muted" href="./anvils.html">Ковадло</a></li>
+<li><a class="text-muted" href="./aqueducts.html">Акведук</a></li>
+<li><a class="text-muted" href="./armor.html">Броня (обладунки)</a></li>
+<li><a class="text-muted" href="./barrels.html">Діжки</a></li>
+<li><a class="text-muted" href="./bellows.html">Міхи</a></li>
+<li><a class="text-muted" href="./blast_furnace.html">Доменна піч</a></li>
+<li><a class="text-muted" href="./bloomery.html">Сиродутне горно</a></li>
+<li><a class="text-muted" href="./bread.html">Хліб</a></li>
+<li><a class="text-muted" href="./charcoal_forge.html">Ковальське горно</a></li>
+<li><a class="text-muted" href="./charcoal_pit.html">Вугільна яма</a></li>
+<li><a class="text-muted" href="./chisel.html">Зубило</a></li>
+<li><a class="text-muted" href="./composter.html">Компостер</a></li>
+<li><a class="text-muted" href="./crops.html">Городина</a></li>
+<li><a class="text-muted" href="./crucible.html">Тигель</a></li>
+<li><a class="text-muted" href="./dairy.html">Молочні продукти</a></li>
+<li><a class="text-muted" href="./damage_types.html">Види пошкоджень</a></li>
+<li><a class="text-muted" href="./decay.html">Консервація</a></li>
+<li><a class="text-muted" href="./fertilizers.html">Добрива</a></li>
+<li><a class="text-muted" href="./fire_clay.html">Вогнетривка глина</a></li>
+<li><a class="text-muted" href="./fishing.html">Рибальство</a></li>
+<li><a class="text-muted" href="./flux.html">Флюс</a></li>
+<li><a class="text-muted" href="./gems.html">Дорогоцінне каміння</a></li>
+<li><a class="text-muted" href="./grill.html">Багаття та гриль</a></li>
+<li><a class="text-muted" href="./heating.html">Нагрівання</a></li>
+<li><a class="text-muted" href="./hydration.html">Зрошування</a></li>
+<li><a class="text-muted" href="./lamps.html">Ліхтарі</a></li>
+<li><a class="text-muted" href="./leather_making.html">Обробка кожі</a></li>
+<li><a class="text-muted" href="./lighting.html">Освітлення</a></li>
+<li><a class="text-muted" href="./minecarts.html">Вагонетка</a></li>
+<li><a class="text-muted" href="./panning.html">Вимивання</a></li>
+<li><a class="text-muted" href="./papermaking.html">Виготовлення паперу</a></li>
+<li><a class="text-muted" href="./pets.html">Улюбленці</a></li>
+<li><a class="text-muted" href="./pot.html">Багаття та казан</a></li>
+<li><a class="text-muted" href="./powderkegs.html">Порохова бочка</a></li>
+<li><a class="text-muted" href="./prospecting.html">Геологорозвідка</a></li>
+<li><a class="text-muted" href="./quern.html">Млин</a></li>
+<li><a class="text-muted" href="./salad.html">Салати</a></li>
+<li><a class="text-muted" href="./sandwiches.html">Бутерброди</a></li>
+<li><a class="text-muted" href="./scribing_table.html">Стіл писаря</a></li>
+<li><a class="text-muted" href="./sluices.html">Шлюз</a></li>
+<li><a class="text-muted" href="./steel.html">Сталь</a></li>
+<li><a class="text-muted" href="./support_beams.html">Опорні балки</a></li>
+<li><a class="text-muted" href="./weaving.html">Ткацтво</a></li>
+<li><a class="text-muted" href="./wooden_buckets.html">Дерев'яні відра</a></li></ul>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 py-3">
+            <p><em><a class="text-muted" href="../">Index</a> / <a class="text-muted" href="#">Розширена механіка</a></em></p>
+            
+                <h4>Розширена механіка</h4><p><p>Розділи дерева передових технологій, від першої кирки до кольорової сталі.</p>
+</p>
+                <hr>
+                <div class="card-columns">
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="advanced_building_materials.html">Передові матеріали</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="animal_husbandry.html">Тваринництво</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="anvils.html">Ковадло</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="aqueducts.html">Акведук</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="armor.html">Броня (обладунки)</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="barrels.html">Діжки</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="bellows.html">Міхи</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="blast_furnace.html">Доменна піч</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="bloomery.html">Сиродутне горно</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="bread.html">Хліб</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="charcoal_forge.html">Ковальське горно</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="charcoal_pit.html">Вугільна яма</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="chisel.html">Зубило</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="composter.html">Компостер</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="crops.html">Городина</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="crucible.html">Тигель</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="dairy.html">Молочні продукти</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="damage_types.html">Види пошкоджень</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="decay.html">Консервація</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="fertilizers.html">Добрива</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="fire_clay.html">Вогнетривка глина</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="fishing.html">Рибальство</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="flux.html">Флюс</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="gems.html">Дорогоцінне каміння</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="grill.html">Багаття та гриль</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="heating.html">Нагрівання</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="hydration.html">Зрошування</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="lamps.html">Ліхтарі</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="leather_making.html">Обробка кожі</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="lighting.html">Освітлення</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="minecarts.html">Вагонетка</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="panning.html">Вимивання</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="papermaking.html">Виготовлення паперу</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="pets.html">Улюбленці</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="pot.html">Багаття та казан</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="powderkegs.html">Порохова бочка</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="prospecting.html">Геологорозвідка</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="quern.html">Млин</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="salad.html">Салати</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="sandwiches.html">Бутерброди</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="scribing_table.html">Стіл писаря</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="sluices.html">Шлюз</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="steel.html">Сталь</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="support_beams.html">Опорні балки</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="weaving.html">Ткацтво</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="wooden_buckets.html">Дерев'яні відра</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
